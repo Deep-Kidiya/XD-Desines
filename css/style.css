@@ -1,0 +1,561 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --Drak: #2d2d2d;
+    --Blue: #3B54F0;
+    --Light-Drak: #8E8E8E;
+    --Gryee: #5d5d5d;
+    --l-w: #ECECEC;
+    --w: #fff;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, a, p {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ==================== Navbar ======================== */
+
+.container {
+    max-width: 1700px;
+}
+
+.navbar {
+    padding: 35px 0;
+}
+
+.navbar .nav a {
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--Gryee);
+    line-height: 25px;
+    padding: 0 35px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.navbar .nav a:hover {
+    font-weight: 600;
+    color: var(--Blue);
+}
+
+.navbar .nav a::after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(to right, var(--Drak), var(--Blue));
+    border-radius: 50px;
+    bottom: -10px;
+    left: 0;
+    transition: all 0.5s ease;
+}
+
+.navbar .nav a:hover:after {
+    bottom: -10px;
+    left: 63px;
+    opacity: 1;
+}
+
+.navbar .nav a.e:hover::after {
+    left: 80px;
+}
+
+button {
+    padding: 15px 35px;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    color: var(--l-w);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    background: var(--Blue);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn {
+    margin: 0;
+    padding: 0;
+}
+
+button:hover {
+    background: transparent;
+    border-color: var(--Blue);
+    color: var(--Blue);
+    font-weight: 700;
+}
+
+
+/* ==================== End of Navbar ======================== */
+
+/* ==================== Header ======================== */
+
+.header {
+    padding: 70px 0 0;
+}
+
+.header h1 {
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--Blue);
+    line-height: 42px;
+}
+
+.header h2 {
+    font-size: 75px;
+    font-weight: 700;
+    padding: 20px 0; 
+}
+
+.header h2 span {
+    color: var(--Blue);
+    text-transform: uppercase;
+}
+
+.header p {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 42px;
+    color: var(--Light-Drak);
+}
+
+.header button {
+    margin-top: 50px;
+}
+
+.header .icon {
+    display: flex;
+    align-items: center;
+    padding: 110px 0 0;
+}
+
+.header .icon h1 {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 46px;
+    color: var(--Light-Drak);
+    margin-right: 30px;
+}
+
+.header .icon a {
+    margin: 0 20px;
+    padding:25px;
+    background: var(--l-w);
+    border-radius: 50px;
+    border: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.header .icon .fb {
+    padding: 25px 30px;
+}
+
+.header .icon a:hover {
+    border-color: var(--Blue);
+    background: transparent;
+}
+
+/* ==================== End of Header ======================== */
+
+
+/* ==================== About Us ======================== */
+
+.box-6 {
+    width: 600px;
+    height: 700px;
+    background: var(--Light-Drak);
+    border-radius: 20px;
+}
+
+.about {
+    padding: 200px 0;
+}
+
+.text-1 h1 {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--Blue);
+    letter-spacing: 5px;
+}
+
+
+.text-1 h2 {
+    font-size: 55px;
+    font-weight: 700;
+    padding: 20px 0; 
+}
+
+.text-1 p {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px 0 30px;
+    color: var(--Light-Drak);
+}
+
+.about .tabs ul {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--Drak);
+    border-top: 1px solid var(--Drak);
+}
+
+.nav-link {
+    display: block;
+    padding: 18px 30px;
+    color:var(--Gryee);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: var(--Blue);
+}
+
+
+
+.tabs h1 {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    color: var(--Gryee);
+}
+
+
+.tabs h1 span {
+    font-weight: 600;
+}
+
+/* ==================== End of About Us ======================== */
+
+
+/* ==================== Service ======================== */
+
+.bottem {
+    margin-top: 50px;
+}
+
+.service h1, .service h2 {
+    text-align: start;
+    letter-spacing: 5px;
+}
+
+.service .service-box {
+    margin-top: 30px;
+    padding: 40px;
+    background: var(--l-w);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.service .service-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 20%);
+}
+
+.service-box h1  {
+    padding: 40px 0 25px ; 
+    font-weight: 700;
+    text-align: start;
+}
+
+.service-box p {
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--Light-Drak);
+}
+
+/* ==================== End of Service ======================== */
+
+/* ==================== Skill ======================== */
+
+.skill {
+    margin-top: 200px;
+}
+
+.ex {
+    margin-top: 100px;
+}
+
+.skill h1, .skill h2 {
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.emty-line {
+    position: relative;
+    background: transparent;
+    padding: 8px;
+    width: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 1px solid var(--Light-Drak) ;  
+    transition: all 0.7s ease; 
+}
+
+.emty-line::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    padding: 8px;
+    background: var(--Blue);
+    top: 0;
+    opacity: 0;
+    left: 0;
+    border-radius: 50px;
+    transition: all 0.6s ease;
+}
+
+.xd:hover .emty-line , .html:hover .emty-line , .css:hover .emty-line , .js:hover .emty-line , .bs:hover .emty-line {
+    width: 700px;
+}
+
+.xd h1, .html h1, .css h1, .js h1, .bs h1 {
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 30px;
+    text-align: start;
+    margin-bottom: 30px;
+}
+
+.xd:hover .emty-line::after {
+    width: 650px;
+    opacity: 1;
+}
+
+.html:hover .emty-line::after {
+    width: 550px;
+    opacity: 1;
+}
+
+.css:hover .emty-line::after {
+    width: 500px;
+    opacity: 1;
+}
+
+.js:hover .emty-line::after {
+    width: 250px;
+    opacity: 1;
+}
+
+.bs:hover .emty-line::after {
+    width: 500px;
+    opacity: 1;
+}
+
+/* ==================== End of Skill ======================== */
+
+/* ==================== Project ======================== */
+
+.project {
+    margin-top: 200px;
+}
+
+.project h1, .project h2 {
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.project h1, .project h2 {
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.project .service-box {
+    position: relative;
+    margin-top: 30px;
+    padding: 500px 40px 40px;
+    background: var(--l-w);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.project .service-box::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 20px;
+    height: 0px;
+    width: 0px;
+    z-index: 0;
+    background: linear-gradient(var(--Drak), var(--Blue));
+    transition: all 0.5s ease;
+}
+
+.project .service-box:hover {
+    transform: scale(1.05);
+}
+
+.project .service-box:hover::after {
+    height: 712px;
+    width: 540px;
+    background: linear-gradient(var(--Drak), var(--Drak), var(--Drak), var(--Blue));
+    transition: all 0.3s ease;
+}
+
+.project .service-box h1  {
+    position: relative;
+    z-index: 1;
+    padding: 10px 0 25px ; 
+    letter-spacing: 2px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: start;
+}
+
+.project .service-box h2 {
+    position: relative;
+    z-index: 1;
+    text-align: start;
+    font-size: 20px;
+    line-height: 42px;
+    font-weight: 500;
+    color: var(--Light-Drak);
+    transition: all 0.3s ease;
+}
+
+.project .service-box:hover h2, .project .service-box:hover h1 {
+    position: relative;
+    color: var(--w);
+}
+
+.project button {
+    position: relative;
+    z-index: 1;
+}
+
+.project .service-box:hover button {
+    background: var(--w);
+    color: var(--Blue);
+}
+
+.project .service-box:hover button:hover {
+    background: transparent;
+    color: var(--w);
+    border-color: var(--w);
+}
+
+/* ==================== End of Project ======================== */
+
+/* ==================== Hi ======================== */
+
+.hi {
+    margin-top: 200px;
+}
+
+.hi .ex {
+    margin-top: 50px;
+}
+
+.hi h1, .hi h2 {
+    text-align: start;
+    letter-spacing: 5px;
+}
+
+.hi h3 span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.hi h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.Message {
+    padding: 20px 20px 150px;
+}
+
+input {
+    margin-top: 40px;
+    padding: 20px;
+    width: 90%;
+    outline: none;
+    border: 1px solid var(--Light-Drak);
+    border-radius: 15px;
+}
+
+.hi .btn button {
+    margin-top: 80px;
+}
+
+.hi .box-6 {
+    width: 788px;
+    height: 900px;
+    background: var(--Light-Drak);
+    border-radius: 20px;
+}
+
+/* ==================== End of Hi ======================== */
+
+/* ==================== Footer ======================== */
+
+footer {
+    margin-top: 20px;
+    background: var(--Drak);
+    padding: 50px 0;
+}
+
+footer .icon a:hover svg path {
+    fill: var(--Blue);
+}
+
+footer .icon a svg path {
+    fill: var(--Drak);
+    transition: all 0.3s ease;
+}
+
+footer .icon a {
+    text-decoration: none;
+    margin: 0 20px;
+    padding:25px;
+    background: var(--l-w);
+    border-radius: 50px;
+    border: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+footer .icon .fb {
+    padding: 25px 30px;
+}
+
+footer .icon a:hover {
+    border-color: var(--Blue);
+    background: transparent;
+}
+
+.copyright h1 {
+    text-align: end;
+    font-size: 20px;
+    color: var(--Light-Drak);
+}
+
+.je {
+    justify-content: space-between;
+}
+/* ==================== End of Footer ======================== */
