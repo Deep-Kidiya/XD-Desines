@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --w: #FFFFFF;
+    --g: #87C285;
+    --y: #FFD579;
+    --g: #707070;
+    --lg: #9B9292;
+    --dg: #292929;
+    --p: #8567E1;
+    --d: #121212;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #43444D;
+}
+
+.back-box {
+    margin: 135px 0;
+    background: var(--dg);
+    height: 1130px;
+}
+
+.heading {
+    align-items: center;
+}
+
+.logo {
+    padding: 30px;
+}
+
+.left {
+    align-items: center;
+}
+
+.left .search {
+    border-bottom: 1px solid var(--lg);
+    margin-left: 70px;
+    padding: 0 0 15px;
+}
+
+.right {
+    padding: 0 40px 0 685px;
+}
+
+.plish {
+    padding: 0 50px 0 20px;
+}
+
+input {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    justify-content: s;
+}
+
+.profile {
+    padding: 0 50px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile h1 {
+    margin-left: 20px;
+    color: var(--lg);
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.bottem {
+    display: flex;
+    margin-top: 10px;
+}
+
+.icon {
+    margin: 50px 0 0 50px;
+}
+
+.active {
+    margin: 30px -20px;
+}
+
+.icon-2 {
+    margin-bottom: 30px;
+}
+
+.contant-box {
+    padding: 50px;
+    height: 1000px;
+    background: var(--d);
+}
+
+.contant-h {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.contant-h h2 {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--lg);
+}
+
+.contant-h.h-1 h1 {
+    padding: 0;
+}
+
+.contant-h h1 {
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--w);
+    padding: 30px 0 20px;
+}
+
+.line-box {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    background: var(--dg);
+    padding: 0 20px 20px;
+    border-radius: 20px;
+}
+
+.right-1 {
+    margin-left: 30px;
+}
+
+.line-box h1 {
+    padding: 20px 0 0 0;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--lg);
+}
+
+h1 svg {
+    margin-right: 10px;
+}
+
+h2 {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--w);
+}
+
+h2 span {
+    margin-left: 70px;
+    color: var(--p);
+}
+
+h2.acti-1 span {
+    margin-left: 50px;
+}
+
+.a-2, .a-3 {
+    margin: 0 0 0 30px;
+}
+
+.a-2 img {
+    height: 260px;
+    position: relative;
+    left: -20px;
+    bottom: 1px;
+}
+
+.a-2 .line-box {
+    padding: 0 30px 0 20px;
+}
+
+.a-2 h1 {
+    font-weight: 600;
+    color: var(--w);
+}
+
+.a-2 h1.acti-1 {
+    margin-top: 0;
+}
+
+.a-2 h2 {
+    font-size: 400;
+    color: var(--lg);
+}
+
+.a-2 .l-2 {
+    margin-left: 20px;
+}
+
+.a-2 .l-2 h1, .a-2 .l-2 h2 {
+    text-align: center;
+}
+
+.a-2 .t-2 {
+    padding: 20px 0 0;
+}
+
+.a-2 .l-2 svg {
+    margin-left: 15px;
+}
+
+.a-3 .l-3 {
+    padding: 35px 0 0;
+    background: none;
+}
+
+.a-3 .l-4 {
+    padding: 0;
+    background: transparent;
+}
+
+.line-2 {
+    margin-top: 30px;
+}
+
+.line-2 .text {
+    padding: 0 20px 0 30px;
+}
